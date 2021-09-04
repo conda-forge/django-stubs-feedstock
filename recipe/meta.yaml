@@ -21,10 +21,13 @@ requirements:
     - python >=3.6
   run:
     - django
-    - django-stubs-ext
+    - django-stubs-ext >=0.3.0
     - mypy >=0.790
     - python >=3.6
+    - toml
     - typing-extensions
+    - types-pytz
+    - types-pyyaml
 
 test:
   imports:
