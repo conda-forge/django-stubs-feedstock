@@ -21,7 +21,7 @@ requirements:
     - python >=3.7
   run:
     - django
-    - django-stubs-ext >=0.7.0
+    - django-stubs-ext >=0.8.0
     - mypy >=0.980
     - python >=3.7
     - tomli
