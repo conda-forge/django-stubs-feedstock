@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
-    - setuptools <64
+    - python >=3.8
+    - setuptools
   run:
     - django
-    - django-stubs-ext >=4.2.2
+    - django-stubs-ext >=4.2.5
     - mypy >=1.0.0
-    - python >=3.7
+    - python >=3.8
     - tomli
     - types-pytz
     - types-pyyaml
