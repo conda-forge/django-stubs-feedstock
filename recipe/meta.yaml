@@ -1,5 +1,5 @@
 {% set name = "django-stubs" %}
-{% set version = "4.2.7" %}
+{% set version = "5.0.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-stubs-{{ version }}.tar.gz
-  sha256: 8ccd2ff4ee5adf22b9e3b7b1a516d2e1c2191e9d94e672c35cc2bc3dd61e0f6b
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: b8a792bee526d6cab31e197cb414ee7fa218abd931a50948c66a80b3a2548621
 
 build:
   number: 0
@@ -19,16 +19,14 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - setuptools
   run:
-    - django
-    - django-stubs-ext >=4.2.7
-    - mypy >=1.0.0
     - python >=3.8
+    - django
+    - asgiref
+    - django-stubs-ext >=5.0.0
     - tomli
-    - types-pytz
-    - types-pyyaml
     - typing-extensions
+    - types-pyyaml
 
 test:
   imports:
