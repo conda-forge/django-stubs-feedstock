@@ -23,9 +23,9 @@ requirements:
     - python >=3.8
     - django
     - asgiref
-    - django-stubs-ext >=5.0.0
+    - django-stubs-ext >=5.0.2
     - tomli
-    - typing-extensions
+    - typing-extensions >=4.11.0
     - types-pyyaml
 
 test:
