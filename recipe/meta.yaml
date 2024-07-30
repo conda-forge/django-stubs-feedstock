@@ -23,7 +23,7 @@ requirements:
     - python >=3.8
     - django
     - asgiref
-    - django-stubs-ext >=5.0.2
+    - django-stubs-ext >=5.0.3
     - tomli
     - typing-extensions >=4.11.0
     - types-pyyaml
