@@ -1,5 +1,5 @@
 {% set name = "django-stubs" %}
-{% set version = "5.0.2" %}
+{% set version = "5.0.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 236bc5606e5607cb968f92b648471f9edaa461a774bc013bf9e6bff8730f6bdf
+  sha256: f12d26a8f60d07398d4f160daef153cdb5f6e30b31ad3a6a15d04fbda86f10dc
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - python >=3.8
     - django
     - asgiref
-    - django-stubs-ext >=5.0.2
+    - django-stubs-ext >=5.0.3
     - tomli
     - typing-extensions >=4.11.0
     - types-pyyaml
