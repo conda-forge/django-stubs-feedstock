@@ -25,7 +25,7 @@ requirements:
     - python >={{ python_min }}
     - django
     - asgiref
-    - django-stubs-ext >=5.1.1
+    - django-stubs-ext =={{ version }}
     - tomli
     - typing_extensions >=4.11.0
     - types-pyyaml
