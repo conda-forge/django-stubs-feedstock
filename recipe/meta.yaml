@@ -1,5 +1,6 @@
 {% set name = "django-stubs" %}
 {% set version = "5.2.0" %}
+{% python_min = "3.10" %}
 
 
 package:
@@ -27,7 +28,7 @@ requirements:
     - asgiref
     - django-stubs-ext =={{ version }}
     - tomli
-    - typing_extensions >=4.11.0
+    - typing_extensions >=4.0
     - types-pyyaml
 
 test:
