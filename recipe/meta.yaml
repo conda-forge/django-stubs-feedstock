@@ -1,5 +1,5 @@
 {% set name = "django-stubs" %}
-{% set version = "5.2.0" %}
+{% set version = "5.2.1" %}
 {% set python_min = "3.10" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 07e25c2d3cbff5be540227ff37719cc89f215dfaaaa5eb038a75b01bbfbb2722
+  sha256: e58260958e58f7b6a8da6bba56d6b31d16c0414079a4aa6baa01c668bd08d39d
 
 build:
   number: 0
