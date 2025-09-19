@@ -2,8 +2,7 @@ schema_version: 1
 
 context:
   name: django-stubs
-  version: "5.2.2"
-  python_min: '3.10'
+  version: "5.2.5"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 2a04b510c7a812f88223fd7e6d87fb4ea98717f19c8e5c8b59691d83ad40a8a6
+  sha256: fc78384e28d8c5292d60983075a5934f644f7c304c25ae2793fc57aa66d5018b
 
 build:
   number: 0
@@ -26,9 +25,9 @@ requirements:
   run:
     - python >=${{ python_min }}
     - django
-    - django-stubs-ext ==${{ version }}
+    - django-stubs-ext >=5.2.2
     - tomli
-    - typing_extensions >=4.0
+    - typing_extensions >=4.11.0
     - types-pyyaml
 
 tests:
