@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: django-stubs
-  version: "5.2.9"
+  version: "6.0.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: c192257120b08785cfe6f2f1c91f1797aceae8e9daa689c336e52c91e8f6a493
+  sha256: e1ca63634221b57a55e16562b9b6d1849aeee2cabfd0fc026084dbe8aa893366
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - uv-build >=0.8.22,<0.9.0
+    - uv-build >=0.10.0,<0.11.0
   run:
     - python >=${{ python_min }}
     - django
@@ -36,7 +36,9 @@ tests:
         - django_stubs_ext
         - mypy_django_plugin
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Mypy stubs for Django
